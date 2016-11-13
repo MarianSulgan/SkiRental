@@ -8,21 +8,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h1 style={{ fontFamily: 'Comic Sans MS' }}>
-                    <span style={{ color: 'red' }}>Skirent</span>
-                    <span style={{ color: 'pink' }}>al App</span>
-                </h1>
-
-                <h2 style={{ fontFamily: 'Comic Sans MS' }}>
-                    <span style={{ color: 'red' }}>WOW </span>
-                    <span style={{ color: 'green' }}>awdada </span>
-                    <span style={{ color: 'red' }}>is </span>
-                    <span style={{ color: 'blue' }}>exactly </span>
-                    <span style={{ color: 'yellow' }}>where </span>
-                    <span style={{ color: 'brown' }}>the </span>
-                    <span style={{ color: 'pink' }}>magic </span>
-                    <span style={{ color: 'aqua' }}>happens.</span>
-                </h2>
+                <p> init text </p>
             </div>
         );
     }

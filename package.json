@@ -4,7 +4,7 @@
   "description": "SKIrental project",
   "main": "main.js",
   "scripts": {
-    "start": "concurrently -k \"npm run dev-win\" \"npm run electron\"",
+    "start": "SET NODE_ENV=development&&concurrently -k \"npm run dev-win\" \"npm run electron\"",
     "electron": "SET NODE_ENV=development&&electron . --hot",
     "clean": "rimraf dist",
     "dev-win": "SET NODE_ENV=development&&babel-node server.js",
