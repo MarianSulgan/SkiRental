@@ -14,6 +14,7 @@ class App extends Component {
                 </h1>
 
                 <h2 style={{ fontFamily: 'Comic Sans MS' }}>
+                    <span style={{ color: 'red' }}>WOW </span>
                     <span style={{ color: 'green' }}>This </span>
                     <span style={{ color: 'red' }}>is </span>
                     <span style={{ color: 'blue' }}>exactly </span>
