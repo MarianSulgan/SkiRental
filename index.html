@@ -19,5 +19,11 @@
     <div id="root">
     </div>
   </body>
-  <script src="http://localhost:3000/dist/bundle.js"></script>
+  <script>
+    (function() {
+      const script = document.createElement('script');
+      script.src = process.env.ENV === 'development' ? 'http://localhost:3000/dist/bundle.js' : './dist/bundle.js';
+      document.write(script.outerHTML);
+    }());
+  </script>
 </html>
