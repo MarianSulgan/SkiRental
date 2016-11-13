@@ -1,3 +1,3 @@
-Welcome to SKIrental project.
+# SkiRental
 
-Stay tuned.
+This is ski rental desktop application.
