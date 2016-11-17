@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <p> init text </p>
+                { this.props.children }
             </div>
         );
     }
