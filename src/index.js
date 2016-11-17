@@ -8,7 +8,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 import configureStore from './store/configureStore';
 
-import App from './containers/app/App';
+import App from './containers/App';
 import Home from './containers/home/Home';
 
 import './index.less';
