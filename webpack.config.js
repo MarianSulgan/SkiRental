@@ -4,7 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: '#cheap-module-eval-source-map',
+  devtool: '#inline-eval-source-map',
   entry: [
     'babel-polyfill',
     'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr',
