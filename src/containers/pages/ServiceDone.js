@@ -9,7 +9,7 @@ class ServiceDone extends Component {
     componentWillMount() {
         const { setPage } = this.props;
 
-        setPage(c.PAGE_SERVIS_DONE);
+        setPage(c.PAGE_SERVICE_DONE);
     }
 
     render() {

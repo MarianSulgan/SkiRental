@@ -5,17 +5,17 @@ import { bindActionCreators } from 'redux';
 import * as c from './../../constants/constants';
 import allActions from './../../actions/allActions';
 
-class ServiceRunning extends Component {
+class ServiceNew extends Component {
     componentWillMount() {
         const { setPage } = this.props;
 
-        setPage(c.PAGE_SERVIS_RUNNING);
+        setPage(c.PAGE_SERVICE_NEW);
     }
 
     render() {
         return (
             <div className="container">
-                <h1>ServiceRunning!</h1>
+                <h1>ServiceNew!</h1>
             </div>
         );
     }
@@ -32,4 +32,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(ServiceRunning);
+)(ServiceNew);

@@ -27,9 +27,9 @@ ReactDOM.render(
                     <Route path="/rent-running" component={pages.RentRunning} />
                     <Route path="/rent-calendar" component={pages.RentCalendar} />
                     <Route path="/database" component={pages.Database} />
-                    <Route path="/servis-new" component={pages.ServisNew} />
-                    <Route path="/servis-running" component={pages.ServisRunning} />
-                    <Route path="/servis-done" component={pages.ServisDone} />
+                    <Route path="/service-new" component={pages.ServiceNew} />
+                    <Route path="/service-running" component={pages.ServiceRunning} />
+                    <Route path="/service-done" component={pages.ServiceDone} />
                     <Route path="/sale" component={pages.Sale} />
                     <Route path="/settings" component={pages.Settings} />
                     <Route path="/import" component={pages.Import} />

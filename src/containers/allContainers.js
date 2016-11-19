@@ -5,9 +5,9 @@ import RentCalendar from './pages/RentCalendar';
 import RentNew from './pages/RentNew';
 import RentRunning from './pages/RentRunning';
 import Sale from './pages/Sale';
-import ServisDone from './pages/ServisDone';
-import ServisNew from './pages/ServisNew';
-import ServisRunning from './pages/ServisRunning';
+import ServiceDone from './pages/ServiceDone';
+import ServiceNew from './pages/ServiceNew';
+import ServiceRunning from './pages/ServiceRunning';
 import Settings from './pages/Settings';
 
 export default {
@@ -18,8 +18,8 @@ export default {
     RentNew,
     RentRunning,
     Sale,
-    ServisDone,
-    ServisNew,
-    ServisRunning,
+    ServiceDone,
+    ServiceNew,
+    ServiceRunning,
     Settings
 };
