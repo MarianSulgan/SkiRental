@@ -1,7 +1,5 @@
-// import * as loginActions from './auth/loginActions';
-// import * as logoutActions from './auth/logoutActions';
+import * as pageActions from './common/pageActions';
 
-// export default {
-//     ...loginActions,
-//     ...logoutActions
-// };
+export default {
+    ...pageActions,
+};
