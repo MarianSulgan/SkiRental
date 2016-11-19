@@ -4,7 +4,10 @@ import { withRouter } from 'react-router';
 const MainBtn = (props) => {
     return (
         <div className={'main-button'} onClick={() => { props.router.push(props.url)}}>
-            <p> { props.title } </p>
+            <p>
+                <i className={`fa ${props.icon}`} />
+                { props.title }
+            </p>
         </div>
     );
 }

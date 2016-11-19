@@ -26,7 +26,7 @@ class Home extends Component {
                                 return (
                                     <div>
                                         { !p.hidden &&
-                                            <MainBtn title={p.title} url={p.url} />
+                                            <MainBtn {...p} />
                                         }
                                     </div>
                                 );

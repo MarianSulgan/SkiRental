@@ -2,18 +2,22 @@ import { handleActions } from 'redux-actions';
 import { map } from 'lodash';
 import * as c from '../../constants/constants';
 
+const page = (key, url, title, active, hidden, icon) => {
+    return { key, url, title, active, hidden, icon }
+}
+
 export const defaultState = [
-    { key: c.PAGE_HOME, url: '/', title: 'Menu', active: false, hidden: true },
-    { key: c.PAGE_RENT_NEW, url: '/rent-new', title: 'Nová výpožička', active: false, hidden: false },
-    { key: c.PAGE_RENT_RUNNING, url: '/rent-running', title: 'Prebiehajúce výpožičky', active: false, hidden: false },
-    { key: c.PAGE_RENT_CALENDAR, url: '/rent-calendar', title: 'Kalendár výpožičiek', active: false, hidden: false },
-    { key: c.PAGE_DATABASE, url: '/database', title: 'Databáza', active: false, hidden: false },
-    { key: c.PAGE_SERVICE_NEW, url: '/service-new', title: 'Nový servis', active: false, hidden: false },
-    { key: c.PAGE_SERVICE_RUNNING, url: '/service-running', title: 'Prebiehajúci servis', active: false, hidden: false },
-    { key: c.PAGE_SERVICE_DONE, url: '/service-done', title: 'Ukončený servis', active: false, hidden: false },
-    { key: c.PAGE_SALE, url: '/sale', title: 'Predaj', active: false, hidden: false },
-    { key: c.PAGE_SETTINGS, url: '/settings', title: 'Nastavenia', active: false, hidden: false },
-    { key: c.PAGE_IMPORT, url: '/import', title: 'Import dát', active: false, hidden: false },
+    page(c.PAGE_HOME, '/', 'Menu', false, true),
+    page(c.PAGE_RENT_NEW, '/rent-new', 'Nová výpožička', false, false, 'fa-bug'),
+    page(c.PAGE_RENT_RUNNING, '/rent-running', 'Prebiehajúce výpožičky', false, false, 'fa-bullseye'),
+    page(c.PAGE_RENT_CALENDAR, '/rent-calendar', 'Kalendár výpožičiek', false, false, 'fa-cog'),
+    page(c.PAGE_DATABASE, '/database', 'Databáza', false, false, 'fa-cc'),
+    page(c.PAGE_SERVICE_NEW, '/service-new', 'Nový servis', false, false, 'fa-clone'),
+    page(c.PAGE_SERVICE_RUNNING, '/service-running', 'Prebiehajúci servis', false, false, 'fa-code'),
+    page(c.PAGE_SERVICE_DONE, '/service-done', 'Ukončený servis', false, false, 'fa-download'),
+    page(c.PAGE_SALE, '/sale', 'Predaj', false, false, 'fa-female'),
+    page(c.PAGE_SETTINGS, '/settings', 'Nastavenia', false, false, 'fa-flag'),
+    page(c.PAGE_IMPORT, '/import', 'Import dát', false, false, 'fa-inbox')
 ];
 
 export default handleActions({
